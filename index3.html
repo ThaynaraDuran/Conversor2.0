@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style3.css">
+    <title>Conversor</title>
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Temperaturas</h1>
+        <p id="subtitle">Converta graus Celsius, Fahrenheit e Kelvin.</p>
+    </header>
+    <section class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 row-cols-lg-3">
+            <div>
+                <h2>Converta</h2>
+            </div>
+            <form id="form">
+
+                <div class="col" display="inline-block">
+                    <div>
+                        <p class="conversor">De:</p>
+                    </div>
+                    <div class="options">
+
+                        <select class="typeInput" id="convertFrom">
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <p class="conversor">Para:</p>
+                    </div>
+                    <div class="options">
+                        <select class="typeInput" id="convertTo">
+                            <option value="Celsius">Celsius</option>
+                            <option value="Fahrenheit">Fahrenheit</option>
+                            <option value="Kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                </div>
+        </div>
+        <div>
+            <label for="degree" class="conversor" id="value/degree">Valor:</label>
+        </div>
+        <div class="optionsvalue">
+            <input type="number" id="degree" name="degree" class="typeInput" step="0.01" required />
+        </div>
+        <div class="botao">
+            <button id="btn" type="submit">Converter</button>
+        </div>
+        </form>
+        <h2>Resultado</h2>
+
+        <div id="result">
+            <p id="valor"></p>
+        </div>
+
+    </section>
+    <footer>
+        <p id="footer">Create by <a href="https://www.linkedin.com/in/thaynara-duran-9883b622a/"
+                target="_blank">ThaynaraDuran</a>
+        </p>
+        <footer>
+            <script src="./script.js"></script>
+</body>
+
+</html>
